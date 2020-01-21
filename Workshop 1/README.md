@@ -1,16 +1,19 @@
+# Workshop 1 React Native
+
 Dans ce permier workshop nous allons apprendre à utiliser React Native en réalisant un application basique utilisant l'api de SpaceX.
 
-- [Mise en place](#mise-en-place)
-    - [Installer NodeJS et npm](#installer-nodejs-et-npm)
-    - [Installer expo](#installer-expo)
-    - [Création du projet](#cr%c3%a9ation-du-projet)
-- [Fondamentaux de React Native](#fondamentaux-de-react-native)
-    - [JSX](#jsx)
-    - [Components](#components)
-    - [Props](#props)
-    - [Style](#style)
-- [Librairie Kitten UI](#librairie-kitten-ui)
-- [React Native Networking](#react-native-networking)
+- [Workshop 1 React Native](#workshop-1-react-native)
+  - [Mise en place](#mise-en-place)
+      - [Installer NodeJS et npm](#installer-nodejs-et-npm)
+      - [Installer expo](#installer-expo)
+      - [Création du projet](#cr%c3%a9ation-du-projet)
+  - [Fondamentaux de React Native](#fondamentaux-de-react-native)
+      - [JSX](#jsx)
+      - [Components](#components)
+      - [Props](#props)
+      - [Style](#style)
+  - [Librairie Kitten UI](#librairie-kitten-ui)
+  - [React Native Networking](#react-native-networking)
 
 ---
 
