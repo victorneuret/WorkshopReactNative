@@ -225,10 +225,40 @@ __Example :__
 ![screen1](img/Screenshot_1.jpg)
 
 
+Petit tips pour les notch :unamused:
+```js
+import { SafeAreaView, Platform, StyleSheet } from 'react-native';
+
+export default class Safe extends Component {
+  render() {
+    return (
+      <SafeAreaView style={styles.droidSafeArea}>
+        <!-- votre app -->
+      </SafeAreaView>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  droidSafeArea: {
+    flex: 1,
+    paddingTop: Platform.OS === "android" ? 33 : 0,  // ajustez la valeur pour votre smartphone
+  },
+});
+```
+Pour les dates, vous pouvez regarder [moment js](https://momentjs.com/)
+
 ---
 ## Librairie Kitten UI
 
+expliquer kitten UI (retirer overkill)
+
+Utiliser kitten pour faire des boutons vers des sites web, 
 
 ---
 ## React Native Networking
+
+expliquer comment taper sur une api
+
+récupérer les données d'une route spacex et afficher
 
