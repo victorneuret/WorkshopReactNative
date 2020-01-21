@@ -12,11 +12,12 @@ Dans ce permier workshop nous allons apprendre à utiliser React Native en réal
       - [Components](#components)
       - [Props](#props)
       - [Style](#style)
+  - [Exercice 1](#exercice-1)
   - [Librairie Kitten UI](#librairie-kitten-ui)
   - [React Native Networking](#react-native-networking)
 
----
 
+---
 ## Mise en place
 
 #### Installer NodeJS et npm
@@ -77,8 +78,8 @@ expo start
 Ouvrez l'application mobile Expo et utilisez la fonction `Scan QR Code` pour scanner le QR code affiché dans votre terminal.  
 L'application devrait se lancer sur votre l'écran de votre smartphone avec un `Welcome to React Native`.
 
----
 
+---
 ## Fondamentaux de React Native
 
 :exclamation: Pour les explications qui vont suivre, je vous conseil d'essayer et de modifier les examples dans votre application mobile pour bien les comprendre.
@@ -127,7 +128,7 @@ import { Image } from 'react-native';
 export default class Gopher extends Component {
   render() {
     return (
-      <Image source={"https://pbs.twimg.com/media/DfdsaI5XkAA6uPc?format=jpg&name=medium"} style={{width: 1200, height: 1200}}/>
+      <Image source={{uri: "https://pbs.twimg.com/media/DfdsaI5XkAA6uPc?format=jpg&name=medium"}} style={{width: 500, height: 500}}/>
     );
   }
 }
@@ -213,9 +214,21 @@ Pour la mise en page de votre application, plusieurs règles de style peuvent ê
 
 
 ---
+## Exercice 1
+
+Utilisez ces nouvelles conaissances pour réaliser une application affichant une image de votre choix, un titre, une date sous ce format : `2020-01-19T11:00:21.000Z` (ISO) et une description.  
+Amusez vous et jouez avec les différents éléments pour mieux les assimiler.  
+Essayer de rendre le tout le plus beaux possible !
+
+__Example :__
+
+![screen1](img/Screenshot_1.jpg)
 
 
+---
 ## Librairie Kitten UI
 
+
+---
 ## React Native Networking
 
