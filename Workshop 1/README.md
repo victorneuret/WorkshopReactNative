@@ -251,6 +251,7 @@ Pour les dates, vous pouvez regarder [moment js](https://momentjs.com/)
 ---
 ## Librairie Kitten UI
 
+![screen 2](img/Screenshot_2.jpg)
 expliquer kitten UI (retirer overkill)
 
 Utiliser kitten pour faire des boutons vers des sites web, 
