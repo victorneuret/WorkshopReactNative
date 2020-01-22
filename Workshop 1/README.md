@@ -13,7 +13,8 @@ Dans ce permier workshop nous allons apprendre à utiliser React Native en réal
       - [Props](#props)
       - [Style](#style)
   - [Exercice 1](#exercice-1)
-  - [Librairie Kitten UI](#librairie-kitten-ui)
+  - [Librairie UI Kitten](#librairie-ui-kitten)
+  - [Exercice 2:](#exercice-2)
   - [React Native Networking](#react-native-networking)
 
 
@@ -249,12 +250,42 @@ const styles = StyleSheet.create({
 Pour les dates, vous pouvez regarder [moment js](https://momentjs.com/)
 
 ---
-## Librairie Kitten UI
+## Librairie UI Kitten
+
+![UIKitten](https://akveo.github.io/react-native-ui-kitten/images/Group-142x.png)
+
+En React Native, une librairie de component permet de mettre à la disposition des developeurs des outils qui lui font gagner du temps.  
+
+UI Kitten est une librairie avec plus de 20 component UI et proposant un systeme de theme.  
+
+Pour ajouter UI Kitten à votre projet, tapez cette commande à la racine de celui-ci :
+
+```bash
+npm i @ui-kitten/components @eva-design/eva react-native-svg
+```
+
+---
+## Exercice 2:
+
+- Référez vous à la [documentation des différents components de UI Kitten](https://akveo.github.io/react-native-ui-kitten/docs/components/components-overview) et modifier l'exercice 1 pour utiliser uniquement des composents de la librairie (excepté l'image).
+- Utilisez le theme `dark` de UI Kitten.
+- Ajoutez 3 boutons ouvrant des pages webs.
+
+__Example :__
 
 ![screen 2](img/Screenshot_2.jpg)
-expliquer kitten UI (retirer overkill)
 
-Utiliser kitten pour faire des boutons vers des sites web, 
+__Tips :__
+
+L'équivalent de `<View>` dans UI Kitten est `<Layout>`.  
+Regardez bien comment utiliser les flexbox pour la mise en page ([Layout with Flexbox](https://facebook.github.io/react-native/docs/flexbox)).  
+Pour ouvrir un lien depuis votre application, vous pouvez utiliser :
+```javascript
+import {Linking} from 'react-native';
+
+Linking.openURL('https://google.com')
+```
+Référez vous à la documentation de React Native pour gérer les actions sur les boutons: [Handling Touches](https://facebook.github.io/react-native/docs/handling-touches)
 
 ---
 ## React Native Networking
