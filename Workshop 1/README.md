@@ -15,7 +15,10 @@ Dans ce permier workshop nous allons apprendre à utiliser React Native en réal
   - [Exercice 1](#exercice-1)
   - [Librairie UI Kitten](#librairie-ui-kitten)
   - [Exercice 2:](#exercice-2)
-  - [React Native Networking](#react-native-networking)
+  - [Utiliser l'API de SpaceX](#utiliser-lapi-de-spacex)
+      - [Les states](#les-states)
+      - [Axios](#axios)
+  - [Exercice 3](#exercice-3)
 
 
 ---
@@ -254,9 +257,9 @@ Pour les dates, vous pouvez regarder [moment js](https://momentjs.com/)
 
 ![UIKitten](https://akveo.github.io/react-native-ui-kitten/images/Group-142x.png)
 
-En React Native, une librairie de component permet de mettre à la disposition des developeurs des outils qui lui font gagner du temps.  
+En React Native, une librairie de component permet de mettre à la disposition des dévelopeurs des outils qui lui font gagner du temps.  
 
-UI Kitten est une librairie avec plus de 20 component UI et proposant un systeme de theme.  
+UI Kitten est une librairie avec plus de 20 component UI et proposant un système de thème.  
 
 Pour ajouter UI Kitten à votre projet, tapez cette commande à la racine de celui-ci :
 
@@ -288,9 +291,80 @@ Linking.openURL('https://google.com')
 Référez vous à la documentation de React Native pour gérer les actions sur les boutons: [Handling Touches](https://facebook.github.io/react-native/docs/handling-touches)
 
 ---
-## React Native Networking
+## Utiliser l'API de SpaceX
 
-expliquer comment taper sur une api
+Pour finir ce workshop, on va utiliser l'[API de SpaceX](https://github.com/r-spacex/SpaceX-API) pour afficher les informations sur le dernier lancement. SpaceX met à disposition une documentation Postman nous permettant de tester les routes directement sur l'interface de ce dernier. Je vous conseil d'utiliser le [client postman](https://www.getpostman.com/downloads/) de votre système d'exploitation et de cliquer sur le bouton `Run in Postman` en haut a droite de la [documentation web](https://docs.spacexdata.com/?version=latest) pour avoir accès à la collection de requetes.
 
-récupérer les données d'une route spacex et afficher
+#### Les states
 
+Contrairement à une prop qui est passé à la création et qui ne peux pas être modifié, un state peut être modifié n'importe quand à l'intérieur d'un component.  
+Ils vont vous être nécécaisaire pour utiliser l'api de SpaceX dans votre application.  
+Les states sont initialié dans le constructeur.
+```javascript
+class Gopher extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      myState: 0,
+    };
+  }
+...
+```
+Ils doivent être modifié en utilisant `this.setState`
+```javascript
+this.setState({
+  myState: 2,
+})
+```
+Ils sont accessible comme un attribute classique
+```javascript
+console.log(this.state.myState)
+```
+
+#### Axios
+
+Axios est une librairie pour faire des requettes HTTP.
+
+Installation : 
+```bash
+npm install axios --save
+```
+Import :
+```javascript
+import axios from 'axios'
+```
+
+Je vous conseil d'utiliser cette librairie pour faire vos requettes HTTP car elle offre beaucoup de fonctionalités que nous ne verons pas aujourd'hui mais qui peuvent vous être utile plus tard.
+
+Example simple de requette get sur l'API de SpaceX :
+```javascript
+axios.get(`https://api.spacexdata.com/v3/dragons`)
+      .then(res => {
+        console.log(res.data)
+      })
+```
+
+---
+## Exercice 3
+
+Reprenez l'exercice 2 et ajouter l'appelle à l'API de SpaceX pour récupérer les informations sur le dernier lancement.
+- Chercher la bonne route à appeller pour récupérer les informations sur le dernier lancement
+- Afficher le patch de la mission
+- Afficher le titre de la mission
+- Afficher la date du lancement
+- Afficher la description de la mission
+- Redirigez vers la page wikipedia, youtube et press grâce aux boutons de l'exercice 2
+
+__Example :__
+
+![screen 3](img/Screenshot_3.jpg)
+
+__Tips :__
+
+Utilisez la methode `componentDidMount`. Elle est appellé à chaques fois que le component est monté. C'est l'endroit idéal pour faire une requete à une API et récupérer des données. [documentation](https://reactjs.org/docs/react-component.html#componentdidmount)
+
+---
+
+Félicitation ! Vous pouvez passer au [workshop 2](../Workshop%202/README.md) pour aller plus loin !
+
+![ROCKET](https://live.staticflickr.com/65535/48954139137_00debbf558_3k.jpg)
