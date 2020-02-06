@@ -175,7 +175,7 @@ const Greeting = (props) => {
   );
 };
 
-const GophersGreetings = () => {
+const App = () => {
   return (
     <View>
       <Greeting name='Blue Gopher' />
@@ -185,7 +185,7 @@ const GophersGreetings = () => {
   );
 };
 
-export default GophersGreetings;
+export default App;
 ```
 Ici, on a créé un composant `Greeting` utilisant une prop `name`. Pour utiliser ce composant il suffit donc de passer la prop `name` en paramètre au composant à la création dans le JSX: `<Greeting name='Gopher' />`.  
 Ce composant est donc modifiable et réutilisable pour saluer n'importe qui !
@@ -207,7 +207,7 @@ __plain old js object__
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-const Style = () => {
+const App = () => {
   return (
     <View>
       <Text style={styles.redText}>Gopher</Text>
@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Style;
+export default App;
 ```
 Le style est déclaré en dehors du composant en tant qu'objet javascript qui peut être appelé en paramètre de la prop `style`. Il est possible de combiner plusieurs objets de style dans un seul paramètre en utilisant un tableau. Si plusieurs règles de style rentrent en conflit, seule la dernière mentionnée est utilisée.
 
@@ -255,7 +255,7 @@ Petits tips pour les notch :unamused:
 import React from 'react';
 import { SafeAreaView, Platform, StyleSheet } from 'react-native';
 
-const Safe = () => {
+const App = () => {
   return (
     <SafeAreaView style={styles.droidSafeArea}>
       <!-- votre app -->
@@ -270,7 +270,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Safe;
+export default App;
 ```
 Pour les dates, vous pouvez regarder [moment js](https://momentjs.com/)
 
