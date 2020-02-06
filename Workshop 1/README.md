@@ -106,20 +106,6 @@ Un composant React est un objet qui affiche quelque chose. Chaque élément affi
 Dans le ficher `App.js`, vous trouverez le code ci-dessous :
 
 ```javascript
-export default class App extends Component {
-  render() {
-    return (
-      <View>
-        <Text>Hello, world!</Text>
-      </View>
-    );
-  }
-}
-```
-
-Je vous invite à le remplacer par ceci :
-
-```javascript
 const App = () => {
   return (
     <View style={styles.container}>
@@ -131,6 +117,21 @@ const App = () => {
 };
 
 export default App;
+```
+
+Je vous invite à le remplacer par ceci :
+
+
+```javascript
+export default class App extends Component {
+  render() {
+    return (
+      <View>
+        <Text>Hello, world!</Text>
+      </View>
+    );
+  }
+}
 ```
 
 Pour en savoir plus sur cette syntaxe, je vous invite à jeter un oeil aux liens ci-dessous.
