@@ -106,23 +106,6 @@ Un composant React est un objet qui affiche quelque chose. Chaque élément affi
 Dans le ficher `App.js`, vous trouverez le code ci-dessous :
 
 ```javascript
-const App = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.welcome}>Welcome to React Native!</Text>
-      <Text style={styles.instructions}>To get started, edit App.js</Text>
-      <Text style={styles.instructions}>{instructions}</Text>
-    </View>
-  );
-};
-
-export default App;
-```
-
-Je vous invite à le remplacer par ceci :
-
-
-```javascript
 export default class App extends Component {
   render() {
     return (
@@ -132,6 +115,21 @@ export default class App extends Component {
     );
   }
 }
+```
+
+Je vous invite à le remplacer par ceci :
+
+
+```javascript
+const App = () => {
+  return (
+    <View>
+        <Text>Hello, world!</Text>
+      </View>
+  );
+};
+
+export default App;
 ```
 
 Pour en savoir plus sur cette syntaxe, je vous invite à jeter un oeil aux liens ci-dessous.
