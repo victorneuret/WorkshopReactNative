@@ -135,6 +135,8 @@ const App = () => {
     </View>
   );
 };
+
+export default App;
 ```
 
 Pour en savoir plus sur cette syntaxe, je vous invite à jeter un oeil aux liens ci-dessous.
