@@ -106,9 +106,6 @@ Un composant React est un objet qui affiche quelque chose. Chaque élément affi
 Dans le ficher `App.js`, vous trouverez le code ci-dessous :
 
 ```javascript
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
-
 export default class HelloWorld extends Component {
   render() {
     return (
@@ -123,9 +120,6 @@ export default class HelloWorld extends Component {
 Je vous invite à le remplacer par ceci :
 
 ```javascript
-import React from 'react';
-import { Text, View } from 'react-native';
-
 const App = () => {
   return (
     <View style={styles.container}>
