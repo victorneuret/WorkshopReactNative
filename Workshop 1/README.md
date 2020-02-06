@@ -106,7 +106,7 @@ Un composant React est un objet qui affiche quelque chose. Chaque élément affi
 Dans le ficher `App.js`, vous trouverez le code ci-dessous :
 
 ```javascript
-export default class HelloWorld extends Component {
+export default class App extends Component {
   render() {
     return (
       <View>
