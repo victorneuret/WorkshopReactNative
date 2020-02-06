@@ -384,6 +384,4 @@ Vous avez besoin d'un nouveau `Hook`, celui-ci se nomme `useEffect`. Il est appe
 
 ---
 
-Félicitations ! Vous pouvez passer au [workshop 2](../Workshop%202/README.md) pour aller plus loin !
-
 ![ROCKET](https://live.staticflickr.com/65535/48954139137_00debbf558_3k.jpg)
