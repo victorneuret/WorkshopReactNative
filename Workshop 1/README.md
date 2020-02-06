@@ -334,7 +334,6 @@ const Gopher = () => {
   // setState: fonction permettant de modifier votre variable state
   // useState(0): 0 est la valeur initiale
 };
-})
 ```
 Vous pouvez modifier votre variable comme ceci :
 ```javascript
