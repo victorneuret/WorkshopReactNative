@@ -135,6 +135,8 @@ export default App;
 Pour en savoir plus sur cette syntaxe, je vous invite à jeter un oeil aux liens ci-dessous.
 - [When to use ES6 class based React components vs. functional ES6 React components?](https://stackoverflow.com/questions/36097965/when-to-use-es6-class-based-react-components-vs-functional-es6-react-components)
 - [React Function Components](https://www.robinwieruch.de/react-function-component)
+- [React Today and Tomorrow and 90% Cleaner React With Hooks](https://www.youtube.com/watch?v=dpw9EHDh2bM)
+- [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html)
 
 N'hésitez pas à nous poser des questions !
 
